@@ -41,7 +41,22 @@ const generateBombBoard = (numberOfRows, numberOfColumns, numberOfBombs) => {
 };
 
 const getNumberOfNeighborBombs = (bombBoard, rowIndex, columnIndex) =>{
-	const neighborOffsets = [];
+	const neighborOffsets = [
+	  [-1,-1],
+	  [-1,0],
+	  [-1,1],
+	  [0,-1],
+	  [0,0],
+	  [0,1],
+	  [1, -1],
+	  [1, 0]
+	];
+	const numberOfRows = bombBoard.length;
+	const numberOfColumns = bombBoard[0].length;
+	const numberOfBombs = 0;
+	neighborOffsets.forEach(offset => {
+		
+	});
 };
 
 
